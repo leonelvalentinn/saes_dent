@@ -28,32 +28,3 @@ const txt = `
               </div> 
             `
 
-showServices.addEventListener('click', () => {
-  services.insertAdjacentHTML('beforeend', txt)
-  showServices.style.display = 'none'
-  hideServices.style.display = 'flex'
-})
-hideServices.addEventListener('click', () => {
-  services.innerHTML = `
-                        <div class="card-servicio">
-                          <img src="img/ortodoncia.svg" alt="Ortodoncia Imagotipo">
-                          <h4>Ortodoncia</h4>
-                          <p>Con la ortodoncia logramos alinear los dientes, y conseguimos una correcta relación entre los dientes superiores e inferiores.</p>
-                          <a href="">Ver más</a>
-                        </div>
-                        <div class="card-servicio">
-                          <img src="img/ortopedia.svg" alt="Ortopedia Imagotipo">
-                          <h4>Ortopedia Dental</h4>
-                          <p>La ortopedia está dirigida a niños entre 4 y 12 años para corregir problemas de paladar o mandíbula mediante el uso de alineadores.</p>
-                          <a href="">Ver más</a>
-                        </div>
-                        <div class="card-servicio">
-                          <img src="img/protesis.svg" alt="Prótesis Imagotipo">
-                          <h4>Prótesis</h4>
-                          <p>Mediante la pérdida de uno o más dientes, existe la opción de reponerlos mediante el uso de una prótesis dental fija.</p>
-                          <a href="">Ver más</a>
-                        </div> 
-                        `
-  showServices.style.display = 'flex'
-  hideServices.style.display = 'none'
-})

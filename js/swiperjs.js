@@ -1,23 +1,23 @@
 const swiper = new Swiper('.sample-slider', {
-  loop: true,   
+  loop: true,
   spaceBetween: 20,                       //loop
   autoplay: {                         //autoplay
-      delay: 2000,  
-      disableOnInteraction: false,
-  },   
+    delay: 2000,
+    disableOnInteraction: false,
+  },
   pagination: {                       //pagination(dots)
-      el: '.swiper-pagination',
-      clickable: true,
+    el: '.swiper-pagination',
+    clickable: true,
   },
   navigation: {                       //navigation(arrows)
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   // Responsive breakpoints
   breakpoints: {
     // when window width is >= 768px
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 30
     }
   }
